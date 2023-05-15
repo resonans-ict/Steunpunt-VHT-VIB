@@ -1,0 +1,108 @@
+/* CSS Document */
+
+/*
+-----------------------------------------------
+pure-communication.be
+Author:   Jim Faes
+Version:  14/07/2008
+Client:	  Emmaüs		
+
+Aanpassingen : Kurt Dekkers 30/04/2010
+----------------------------------------------- 
+Steunpunt VHT-VBI
+----------------------------------------------- */
+
+body{background-image:url(../img/varImg/background.jpg);color:#000000;}
+#content-wrapper{background:url(../img/varImg/bg-shadow.jpg) repeat-y top center;}
+
+#breadcrumb a,
+#breadcrumb span{color:#AAABAF;}
+a.active,
+#breadcrumb a.active{color:#636468;}
+/* geen emmaus logo op website */
+#header form {margin-right:2px;} 
+#header img {visibility:hidden;}
+/*-------------------------------*/
+#header{background-color:#0F2F34;}
+#header #header-nav-meta a{color:#fff;}
+#header #header-nav-info a{color:#FFCC00;}
+#header #header-nav-meta a:hover{color:#FFCC00;}
+#header #header-nav-info a:hover{color:#fff;}
+#header-nav-meta li{background-image:url(../img/varImg/bg-header-nav-meta.gif);}
+#header .input-submit{background:url(../img/varImg/btn-submit-zoek.jpg) no-repeat 0px 0px;}
+
+h1,h2,h3{color:#3D8991;}
+#home-intro h2{color:#3D8991;}
+#home-nieuws h2{color:#3D8991;}
+#home-intro a {color:#3D8991;}
+#img-container{background:none;}
+#footer ul li a{color:#27585F;}
+#footer{color:#0F2F34;}
+#footer ul li{background:url(../img/varImg/bg-footer-links.gif) no-repeat left center;}
+
+/* --- tabs --- */
+
+#nav-blok ul#tab-nav li#tab-nav1 a.tab{background-image:url(../img/varImg/btn-tab-nav1.png);}
+#nav-blok ul#tab-nav li#tab-nav2 a.tab{background-image:url(../img/varImg/btn-tab-nav2.png);}
+#nav-blok ul#tab-nav li#tab-nav3 a.tab{background-image:url(../img/varImg/btn-tab-nav3.png);}
+#nav-blok ul#tab-nav li#tab-nav4 a.tab{background-image:url(../img/varImg/btn-tab-nav4.png);}
+
+#nav-blok ul#tab-nav li#tab-nav1 div{background:#35B4B9 url(../img/varImg/btn-tab-nav1-bottom.jpg) 1px bottom  no-repeat;}
+#nav-blok ul#tab-nav li#tab-nav2 div{background:#3D8991 url(../img/varImg/btn-tab-nav2-bottom.jpg) 1px bottom  no-repeat;}
+#nav-blok ul#tab-nav li#tab-nav3 div{background:#27585F url(../img/varImg/btn-tab-nav3-bottom.jpg) 1px bottom  no-repeat;}
+#nav-blok ul#tab-nav li#tab-nav4 div{background:#0F2F34 url(../img/varImg/btn-tab-nav4-bottom.jpg) 1px bottom  no-repeat;}
+
+#nav-blok ul#tab-nav li#tab-nav1 ul{background:#35B4B9 bottom left no-repeat url(../img/varImg/btn-tab-nav1-dropdown.jpg);}
+#nav-blok ul#tab-nav li#tab-nav2 ul{background:#3D8991 bottom left no-repeat url(../img/varImg/btn-tab-nav2-dropdown.jpg);}
+#nav-blok ul#tab-nav li#tab-nav3 ul{background:#27585F bottom left no-repeat url(../img/varImg/btn-tab-nav3-dropdown.jpg);}
+#nav-blok ul#tab-nav li#tab-nav4 ul{background:#0F2F34 bottom left no-repeat url(../img/varImg/btn-tab-nav4-dropdown.jpg);}
+
+/* --- home-nieuws + content-nieuws --- */
+
+.nieuws-links ul li a{color:#333333;background:url(../img/varImg/bg-home-nieuws.gif) no-repeat left 8px;}
+
+/* --- home-links --- */
+
+.banner-links ul li.banner-links-link1{background-image:url(../img/varImg/bg-home-links-1.jpg);}
+.banner-links ul li.banner-links-link2{background-image:url(../img/varImg/bg-home-links-2.jpg);}
+.banner-links ul li.banner-links-link3{background-image:url(../img/varImg/bg-home-links-3.jpg);}
+.banner-links ul li.banner-links-link4{background-image:url(../img/varImg/bg-home-links-4.jpg);}
+
+#content-links ul li a{color:#3D8991;}
+.banner-links ul li.banner-links-link1 a{color:#D48E00;}
+.banner-links ul li.banner-links-link2 a{color:#EFAE00;}
+.banner-links ul li.banner-links-link3 a{color:#FACD32;}
+.banner-links ul li.banner-links-picture{color:#FACD32;}
+
+.banner-links ul{	
+	width:225px;
+	border-top:solid 1px #E29A05;
+	border-left:solid 1px #E29A05;
+}
+.banner-links ul li.banner-links-picture {background-color:#E29A05;}
+
+/* --- accordion --- */
+
+#accordion li{background:url(../img/varImg/bg-subnav-links.gif) bottom left no-repeat;}
+#accordion li a{color:#2D3511;}
+#accordion li a:hover{color:#3D8991;}
+#accordion .subnav-level1 li{background:none;}
+#accordion .subnav-level1 li a{background:url(../img/varImg/subnav_activelinks-closed.gif) no-repeat left 3px;}
+#accordion .subnav-level1 li.active a{background:url(../img/varImg/subnav_activelinks-open.gif) no-repeat left 4px;}
+#accordion li.active ul.subnav-level1 li a.active,
+#accordion li.active ul.subnav-level2 li.active a{color:#3D8991;}
+
+/* --- content --- */
+div#content-txt ul.results li{background-image:url(../img/varImg/results.png);}
+div#content-txt ul.letters li a{color:#6C6C5E;}
+div#content-txt ul.results li a{color:#6C6C5E;}
+div#content-txt div.event_navigation span.nr a,
+div#content-txt div.evenement p a,
+div#content-txt ul.letters li.active a,
+div#content-txt ul.letters li a:hover{color:#3D8991;}
+div#content-txt div.evenement h3{color:#3D8991;}
+#content-nieuws p a{color:#467570;}
+
+div#content-txt div#linkmatrix {
+background-image:url(../img/links/bg.html);
+}

@@ -1,0 +1,436 @@
+/* CSS Document */
+
+/*
+-----------------------------------------------
+pure-communication.be
+Author:   Jim Faes
+Version:  15/07/2008
+Client:	  Emmaüs		
+----------------------------------------------- */
+/*
+------------------------------------------------
+
+    CSS MENU :
+    ----------
+	GENERIC
+	HEADER
+	TAB NAV
+	CONTENT
+	DEELSITE
+	
+----------------------------------------------- */
+
+/* = GENERIC
+----------------------------------------------- */
+
+#content h1{
+	font-size:1.4em;
+	line-height:1em;
+}
+
+#content h2{
+	font-size:1.2em;
+	margin:0px 0px 10px 0px;
+}
+#content h3{
+	font-size:1em;
+	margin:0px 0px 10px 0px;
+}
+
+/* = HEADER
+----------------------------------------------- */
+
+/*#header form{margin-right:8px;}*/
+
+
+/* = TAB NAV
+----------------------------------------------- */
+
+#nav-blok ul#tab-nav,
+#nav-blok ul#tab-nav li{height:54px;}		
+
+/* = CONTENT
+----------------------------------------------- */
+
+#content{padding:175px 7px 8px 18px;}
+
+/* -- breadcrumb --- */
+
+#breadcrumb{padding-left:231px;}
+
+#breadcrumb a,
+#breadcrumb span{
+	font-size:11px;
+	text-decoration:none;
+}
+
+#breadcrumb a{text-decoration:underline;}
+#breadcrumb a.active{text-decoration:none;}
+
+/* --- subnav --- */
+
+#subnav-container{
+	width:193px;
+	float:left;
+	margin:14px 0px 0px 7px;
+	padding:2px 6px 0px 0px;
+	display:inline;
+	background:url(../img/bg-content-text.jpg) repeat-y top right;
+}
+
+#subnav-container h2{
+	font-size:1em;
+	color:#466823;
+	margin-bottom:0px;
+}
+
+#accordion{
+	padding:0px;
+	margin:0px;
+}
+
+#accordion li{
+	padding:0px 0px 9px 0px;
+	margin:6px 0px 0px 0px;
+}
+
+#accordion li a{
+	text-decoration:none;
+	display:block;
+}
+
+#accordion li.active a{font-weight:bold;}
+#accordion li .subnav-level1 a{font-weight:normal;}
+
+#accordion li ul.subnav-level1 li a{padding-left:10px;}
+
+#accordion li ul.subnav-level1,
+#accordion li ul.subnav-level2{padding:0px;}
+
+#accordion li ul.subnav-level1{
+	margin:0px 0px 10px 3px;
+}
+
+/*#accordion li ul.subnav-level2{
+	margin:17px 0px 17px 25px;
+}*/
+
+#accordion li ul.subnav-level1 li,
+#accordion li ul.subnav-level2 li{padding:0px;}
+
+#accordion li ul.subnav-level2 li a{background:none;}
+
+#accordion li.active ul.subnav-level2 li a{background:none;}
+
+
+/* --- content-txt --- */
+
+#content-txt{
+	float:left;
+	width:406px;
+	padding:0px 25px 0px 25px;
+	line-height:1.4em;
+	margin-top:20px;
+	display:inline;
+}
+
+#content-txt.breed{
+	/*is het totaal van de default content-txt breedte + de breedte van de content-right div
+	--> width:406px; + width:226px;*/
+	width:632px;
+}
+
+#content-txt p{
+	margin:5px 0;
+}
+
+#content-txt ul,
+#content-txt ol{
+	margin:5px 0;padding:0 0 0 40px;
+}
+
+div#content-txt ul li{list-style:disc;}
+
+
+div#content-txt ul.letters{
+	margin:0px;
+	padding:0px;
+}
+
+div#content-txt ul.letters li{
+	list-style:none;
+	float: left;
+	font-size:14px;
+	margin-left:0px;
+	display:inline;
+}
+
+div#content-txt ul.letters li a{
+	font-weight:bold;
+	text-decoration:none;
+	display:block;
+	margin-right:6px;
+}
+
+div#content-txt ul.results{
+	list-style:none;	
+	padding:15px 0px 0px 0px;
+	margin:0px;
+}
+
+div#content-txt ul.results li{
+	background-position: 0 6px;
+	background-repeat:no-repeat;
+	list-style-type:none;
+	padding-left:9px;
+	
+	margin:0px;
+}
+
+div#content-txt ul.results li a{
+	text-decoration:underline;
+	line-height:1.4em;
+	font-size:1em;
+}
+div#content-txt ul.results li a:hover{
+	text-decoration:none;
+}
+
+/*********
+	EVENTS
+*********/
+div.eventspacer{
+	clear:both;
+	height:0px;
+}
+
+div.evenement {
+	background-image:url(../img/events.png);
+	background-position: 0 bottom;
+	background-repeat:no-repeat;
+	padding:9px 0;
+}
+div.evenement img{
+	float:left;
+	margin-right:5px;
+}
+div#content-txt div.evenement h3{
+	font-size:1em;
+	font-weight:bold;
+	margin:0px;
+	line-height:1em;
+}
+div#content-txt div.evenement p.datum{
+	font-weight:bold;
+	color:#9C9EA1;
+	margin:0px 0px 6px 0px;
+}
+div#content-txt div.evenement p{
+	color: #636467;
+	margin:0px;
+}
+div#content-txt div.evenement p a:hover{
+	text-decoration:none;
+}
+div#content-txt div.event_navigation{
+	position:relative;
+	height:30px;
+	width:100%;
+	margin-top: 10px;
+}
+div#content-txt div.event_navigation span{
+	color: #6C6C5E;
+}
+div#content-txt div.event_navigation span.vorige{
+	position:absolute;
+	top: 0px;
+	left: 2px;
+}
+div#content-txt div.event_navigation span.vorige a{
+	text-decoration:none;
+	color: #6C6C5E;
+}
+div#content-txt div.event_navigation span.volgende a{
+	text-decoration:none;
+	color: #6C6C5E;
+}	
+div#content-txt div.event_navigation span.volgende a:hover,
+div#content-txt div.event_navigation span.vorige a:hover{
+	color:#000000;
+}
+div#content-txt div.event_navigation span.volgende{
+	position:absolute;
+	top: 0px;
+	right: 2px;
+}
+div#content-txt div.event_navigation span.nr{
+	display:block;
+	text-align:center;
+}
+div#content-txt div.event_navigation span.nr a{
+	text-decoration:none;
+}
+div#content-txt div.event_navigation span.nr a:hover{
+	color: #6C6C5E;
+}
+
+
+/*****************
+	CONTENT TABLES
+*****************/
+
+div#content-txt table {
+	border-collapse: collapse;
+/*	border: 2px solid #cccccc;*/
+}
+
+div#content-txt td,
+div#content-txt  th {
+	/*border: 1px dotted #bbb;*/
+	padding: .5em;}
+
+/*div#content-txt thead th,
+div#content-txt  tfoot th {
+	border: 2px solid #000;
+	text-align: left;
+	font-size: 1.2em;
+	font-weight: bold;
+	background: transparent;
+}
+
+div#content-txt tfoot td {border: 2px solid #000;}*/
+
+
+
+
+/* =body
+----------------------------------------------- */
+
+div#content-txt tbody th,div#content-txt  tbody td {vertical-align: top;
+text-align: left;}
+
+div#content-txt tbody th {white-space: nowrap;}
+div#content-txt tbody tr:hover {background: #fafafa;}
+
+
+
+
+/* --- content-right --- */
+
+#content-right{
+	width:229px;
+	float:left;
+	margin-top:20px;
+	display:inline;
+	
+}
+
+#content-nieuws{
+	width:191px;
+	padding:0px 20px 0px 15px;
+	background:url(../img/bg-content-text.jpg) repeat-y top left;
+	line-height:1.6em;
+}
+
+
+
+#content-nieuws p a{
+	background:none;
+	
+}
+
+
+.nieuws-links ul{
+	padding:0px;
+	margin:0px;
+}
+
+.nieuws-links ul li{margin-bottom:13px;}
+
+.nieuws-links ul li a{
+	padding-left:14px;
+	display:block;
+}
+
+
+.banner-links ul{
+	width:225px;
+	margin:10px 6px 0px 0px;
+	padding:0px;
+	border-top:solid 1px #E7B901;
+	border-left:solid 1px #E7B901;
+}
+
+.banner-links ul li{
+	width:225px;
+	height:54px;
+	margin:0px;
+	padding:0px;
+	background-position:top left;
+	background-repeat:no-repeat;
+	overflow:hidden;
+	position:relative;
+	vertical-align: bottom;
+}
+
+.banner-links ul li a img{
+	position:absolute;
+	top:0px;
+	left:0px;	
+}
+
+.banner-links ul li.banner-links-picture a img{
+	position:relative;
+	
+}
+
+.banner-links ul li.banner-links-picture {
+	
+	height:100%;
+	background-color:#FFCC00;
+	
+}
+
+
+.banner-links ul li a{
+	text-decoration:none;
+	display:block;
+	height:100%;
+	font-size:14px;
+	font-weight:bold;
+	padding:13px 20px 0px 70px;
+	overflow:hidden;
+}
+
+.banner-links ul li.banner-links-picture a{
+	padding:0px;
+	
+}
+
+
+.banner-links ul li.banner-links-link4 div{
+	position: absolute; 
+	top: 0px;
+	left:0px;
+}
+
+.banner-links ul li.banner-links-link4 a{
+	text-decoration:none;
+	display:block;
+	font-size:14px;
+	font-weight:bold;
+	padding:0px 20px 0px 70px;
+	width:135px;
+	height:54px;
+	display:table-cell;
+	vertical-align:middle;
+}
+
+
+/* = DEELSITE
+----------------------------------------------- */
+
+.deelsite #nav-blok{display:none;}
+.deelsite #content{padding:145px 7px 8px 18px;}
+.deelsite #breadcrumb{padding-left:0px;margin:8px 0 10px 0;}
+.deelsite #content-txt{margin-top:10px;}

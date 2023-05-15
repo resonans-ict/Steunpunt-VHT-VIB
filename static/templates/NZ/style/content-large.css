@@ -1,0 +1,13 @@
+p,
+div.nieuws-links,
+div#content-txt, 
+div#home-intro, 
+div#subnav-container,
+div#breadcrumb,
+div#home-indekijker, 
+div#home-contact,
+div#home-nieuws,
+div#content-txt ul li a,
+div#content-txt ul.results li a{
+	font-size:115%;
+}

@@ -1,0 +1,143 @@
+/* CSS Document */
+
+/*
+-----------------------------------------------
+pure-communication.be
+Author:   Jim Faes
+Version:  14/07/2008
+Client:	  Emmaüs		
+----------------------------------------------- */
+/*
+------------------------------------------------
+
+    CSS MENU :
+    ----------
+	GENERIC
+	HEADER
+	TAB NAV
+	CONTENT
+	
+----------------------------------------------- */
+
+/* = GENERIC
+----------------------------------------------- */
+
+#content h2{
+	font-size:1.5em;
+	margin:20px 0px 17px 0px;
+}
+
+/* = TAB NAV
+----------------------------------------------- */
+#nav-blok ul#tab-nav,
+#nav-blok ul#tab-nav li{height:239px;}	
+#nav-blok ul#tab-nav li a.tab:hover{
+	background-position:0px 0px;
+	height:27px;
+	margin-top:19px;
+}
+
+/* = CONTENT
+----------------------------------------------- */
+#content{padding-top:352px;}
+
+#home-intro,
+#home-nieuws,
+#home-links{float:left;display:inline;font-size:1em;}
+
+#home-intro{
+	width:432px;
+	margin:0px 0px 0px 6px;
+	padding:0px 0px 18px 18px;
+	line-height:1.4em;
+	background:url(../img/bg-home-intro.jpg) no-repeat right 50px;
+}
+
+#home-intro p{margin-right:10px;}
+
+#home-intro ul{
+	margin:10px 0px 0px 0px;
+	padding:0px;
+	width:432px;
+
+}
+
+#home-intro ul li{
+	margin:0px 0px 0px 0px;
+	padding:0px 30px 0px 0px;
+	display:inline-block;
+	width:186px;
+	height:135px;
+	float:left;
+	display:inline;
+}
+
+#home-intro.breed{width:638px;padding:0px 20px 18px 18px;}
+
+#home-nieuws{
+	width:196px;
+	padding:0px 20px 0px 10px;
+}
+
+.nieuws-links ul{
+	padding:0px;
+	margin:0px;
+}
+
+.nieuws-links ul li{
+	margin-bottom:12px;
+	padding-bottom:13px;
+	background:url(../img/bg-nieuws-links.jpg) center bottom no-repeat;
+}
+
+.nieuws-links ul li a{
+	padding-left:14px;
+	display:block;
+	
+}
+
+.banner-links ul{
+	width:227px;
+	margin:20px 6px 13px 0px;
+	padding:0px;
+}
+
+.banner-links ul li{
+	
+	width:225px;
+	height:54px;
+	margin:0px;
+	padding:0;
+	background-position:top left;
+	background-repeat:no-repeat;
+	overflow:hidden;
+	position:relative;
+	vertical-align: bottom;
+}
+
+.banner-links ul li a img{
+	position:absolute;
+	top:0px;
+	left:0px;
+	
+}
+
+.banner-links ul li div{
+	position: absolute; 
+	top: 0px;
+	left:0px;
+}
+
+.banner-links ul li a
+{
+	text-decoration: none;
+	font-size: 13px;
+	font-weight: bold;
+	padding: 0px 20px 0px 70px;
+	width: 135px;
+	height: 54px;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+

@@ -1,0 +1,351 @@
+/* CSS Document */
+
+/*
+-----------------------------------------------
+pure-communication.be
+Author:   Jim Faes
+Version:  14/07/2008
+Client:	  Emmaüs		
+----------------------------------------------- */
+/*
+------------------------------------------------
+
+    CSS MENU :
+    ----------
+	RESET
+	GENERIC
+	STRUCTURE
+	HEADER
+	IMG CONTAINER
+	TAB NAV
+	CONTENT
+	
+----------------------------------------------- */
+
+/* = RESET
+----------------------------------------------- */
+
+html, body, div, span, applet, object, iframe
+/*h1, h2, h3, h4, h5, h6, p, blockquote*/, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, sub, sup, tt, var,
+dl, dt, dd,/* ol, ul, li,*/
+fieldset, form, label, legend,
+/*table,*/ caption /*,tbody, tfoot, thead, tr, th, td*/ {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	font-family: inherit;
+	vertical-align: baseline;
+}
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+body {
+	line-height: 1;
+	color: black;
+	background: white;
+}
+ul {
+	list-style: none;
+}
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: separate;
+	border-spacing: 0;
+}
+caption, th, td {
+	text-align: left;
+	font-weight: normal;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: "";
+}
+blockquote, q {
+	quotes: "" "";
+}
+
+/* slightly enhanced, universal clearfix hack */
+.clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+     }
+.clearfix {display: inline-block;}
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* close commented backslash hack */
+
+
+/* = GENERIC
+----------------------------------------------- */
+body, html{
+	height:100%;
+	margin:0px;
+	padding:0px;
+}
+
+body{
+	font-size:62.5%;
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+div.spacer{
+	clear:both;
+	height:0px;
+}
+
+.left{float:left;}
+.right{float:right;}
+
+/* = STRUCTURE
+----------------------------------------------- */
+
+#container{
+	width:960px;
+	margin:auto auto;	
+}
+
+#content-wrapper{
+	padding:0px 22px 0px 22px;
+	width:916px;
+	background:url(../img/bg-shadow-emmaus.jpg) repeat-y top left;	
+	position:relative;
+}
+#header{height:24px;}
+#footer{height:30px;}
+
+
+/* = HEADER
+----------------------------------------------- */
+#header{
+	font-size:11px;
+	position:absolute;
+	top:0px;
+	left:22px;
+	width:916px;
+	z-index:1;
+	
+}
+
+#header form,
+#header #header-nav-meta,
+#header #header-nav-info,
+#header img{float:right;}
+
+#header #logo-klein{
+	width:55px;
+	height:68px;
+	overflow:hidden;
+	position:absolute;
+	right:0px;
+	top:0px;	
+}
+
+#header #logo-klein img{
+
+	border-top:5px #fff solid;
+	border-right:4px #fff solid;
+	border-bottom:5px #fff solid;
+	border-left:5px #fff solid;
+}
+	
+#header form{margin-right:9px;margin-right:58px;/*zonder/met logo*/}
+
+#header ul {padding:0px;}
+
+#header ul li{
+	display:inline;
+	background-position:left center;
+	background-repeat:no-repeat;
+	padding-left:5px;
+	margin-left:5px;
+}
+
+#header-nav-meta{margin:4px 3px 0px 0px;}
+#header-nav-meta a{text-decoration:none;}
+
+#header-nav-meta a.small,
+#header-nav-meta a.medium,
+#header-nav-meta a.large{font-family:Verdana, Arial, Helvetica, sans-serif;}
+
+#header-nav-meta a.small{font-size:9px;}
+#header-nav-meta a.medium{font-size:12px;}
+#header-nav-meta a.large{font-size:15px;}
+
+#header-nav-info{margin:6px 10px 0px 0px;}
+#header-nav-info li{background-image:url(../img/varImg/bg-header-nav-info.gif);}
+
+#header .input-text,
+#header .input-submit{
+	
+	display:inline;
+	float:left;
+	border-spacing: 0px;
+	margin: 2px 0px 0px 0px;
+	padding: 0px;
+	
+	
+}
+
+#header .input-submit{
+	height:20px;
+	background:url(../img/varImg/btn-submit-zoek.jpg) no-repeat 0px 0px;
+	border:none;
+	text-indent:-9000px;
+	width:39px;
+	padding-left:39px;
+	overflow:hidden;
+	
+}
+
+#header .input-text{
+	width:96px;
+	height:17px;
+	border-top:1px solid #D5D7D1;
+	border-left:none;
+	border-right:none;
+	border-bottom:none;
+	font-size:11px;
+	padding:2px 0px 0px 2px;
+	
+}
+
+
+/* = IMG CONTAINER
+----------------------------------------------- */
+#img-container{
+	position:absolute;
+	top:24px;
+	width:907px;
+	height:103px;
+	overflow:hidden;
+	z-index:0;
+}
+
+#img-container #logo{
+	
+	float:left;
+	/*margin:10px 0px 0px 10px;*/
+	display:inline;
+}
+
+
+#img-container img{
+	float:right;
+}
+
+
+
+/* = TAB NAV
+----------------------------------------------- */
+#nav-blok{
+	width:900px;
+	z-index:1;
+	position:absolute;
+	top:107px;
+	left:32px;
+}
+
+#nav-blok ul#tab-nav {
+	margin:0px;
+	padding:0px;
+	background:url(../img/bg-tab-nav-shadow.jpg) bottom left no-repeat;
+}	
+
+#nav-blok ul#tab-nav li{
+	width:264px;
+	margin:0px;
+	padding:0px;
+	float:left;
+	display:inline;
+}	
+
+#nav-blok ul#tab-nav li a.tab{
+	display:block;
+	overflow:hidden;
+	background-repeat:no-repeat;
+	background-position:0px 0px;
+	height:27px;
+	margin-top:19px;
+	font-size:18px;
+	text-decoration:none;
+	font-family:Arial, Helvetica, sans-serif;
+	color:#fff;
+	padding:5px 0px 0px 17px;
+}
+
+#nav-blok ul#tab-nav li a.tab.active,
+#nav-blok ul#tab-nav li a.tab:hover{
+	display:block;
+	overflow:hidden;
+	background-repeat:no-repeat;
+	background-position:0px -32px;
+	height:46px;
+	margin-top:0px;
+}
+
+
+#nav-blok ul#tab-nav li#tab-nav1{}
+#nav-blok ul#tab-nav li#tab-nav2{margin-left:-40px;}
+#nav-blok ul#tab-nav li#tab-nav3{margin-left:-40px;}
+#nav-blok ul#tab-nav li#tab-nav4{margin-left:-40px;width:225px;}
+
+#nav-blok ul#tab-nav li div{height:185px;}
+
+#nav-blok ul#tab-nav li#tab-nav1 div img{margin-left:1px;width:224px;height:168px;}
+#nav-blok ul#tab-nav li#tab-nav2 div img{margin-left:1px;width:224px;height:168px;}
+#nav-blok ul#tab-nav li#tab-nav3 div img{margin-left:1px;width:224px;height:168px;}
+#nav-blok ul#tab-nav li#tab-nav4 div img{margin-left:1px;width:224px;height:168px;}
+
+/* = CONTENT
+----------------------------------------------- */
+
+h2{font-size:1.4em;}
+#content{font-size:1.2em;}
+.nieuws-links a{text-decoration:none;}
+.nieuws-links a:hover{text-decoration:underline;}
+
+
+/* = FOOTER
+----------------------------------------------- */
+
+#footer{
+	behavior: url(../../../iepngfix.htc);
+	background:url(../img/bg-footer.png) no-repeat top left;
+	margin:0px 22px 0px 22px;
+	font-size:11px;
+	font-family:Arial, Helvetica, sans-serif;
+	color:#F5F9F8;
+	line-height:30px;
+}
+
+#footer ul{
+	margin:0px 0px 0px 36px;
+	padding:0px;
+}
+
+#footer ul li{
+	display:inline;
+	padding-left:8px;
+}
+
+#footer ul li.straat{font-weight:bold;}
+#footer ul li.first{background:none;}
+
+/* Resonans. Quick hacks to allow us to show a static site while a WordPress version is under development.
+Making stuff invisible here is an easier way of not showing the user broken links than editing the code in 25 pages!
+----------------------------------------------- */
+form { display:none; }
+#logo-klein { display:none; }

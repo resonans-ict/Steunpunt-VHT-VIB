@@ -1,0 +1,64 @@
+/* CSS Document */
+
+/*
+-----------------------------------------------
+pure-communication.be
+Author:   Jim Faes
+Version:  15/07/2008
+Client:	  Emmaüs		
+----------------------------------------------- */
+
+#tab-nav, #tab-nav ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	position:relative;
+}
+
+#tab-nav li ul {
+	position: absolute;
+	width: 225px;
+	left: -999em;
+	height:183px;
+	top:50px;
+	z-index:3;
+	padding-top:2px;
+	
+}
+
+#nav-blok ul#tab-nav li ul li{
+	width:213px;
+	height:22px;
+	background:url(../img/bg-dropdown-item.png) no-repeat 12px bottom;
+	margin:0px 16px 0px 6px;
+	line-height:20px;
+	/*behavior: url(iepngfix.htc);*/
+}	
+
+#nav-blok ul#tab-nav li ul li.last{background:none;}	
+
+#nav-blok ul#tab-nav li ul li a{
+	display:block;
+	overflow:hidden;
+	background-repeat:no-repeat;
+	background-position:0px 0px;
+	background-image:none;
+	height:21px;
+	/*behavior: url(iepngfix.htc);*/
+	margin:0px;
+	font-size:12px;
+	text-decoration:none;
+	font-family:Arial, Helvetica, sans-serif;
+	color:#fff;
+	padding:0px 0px 0px 12px;
+}	
+
+#nav-blok ul#tab-nav li ul li a:hover{
+	background:url(../img/varImg/dropdown-rollover.gif) no-repeat left 8px;
+}	
+
+
+#tab-nav li:hover ul, #tab-nav li.sfhover ul {
+	left: auto;
+	
+}
